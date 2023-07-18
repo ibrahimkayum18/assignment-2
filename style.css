@@ -1,0 +1,225 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+::root{
+    
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+.pink{
+    color: #F948B2;
+}
+.btn-pink{
+    color: white;
+    background-color: #F948B2;
+    padding: 21px 40px;
+    border-radius: 48px;
+    border: 0;
+}
+.btn-skyblue{
+    color: #fff;
+    border-radius: 48px;
+    background: #4EC5F7; 
+    padding: 21px 40px;   
+    border: 0;
+}
+.youtube{
+    color: #F61C0D;
+}
+.black{
+    color: black;
+}
+
+
+/* Header Section Style */
+header{
+    /* padding-top: 37px; */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    padding: 37px 130px;
+}
+.header-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.header-left img{
+    width: 100%;
+}
+.header-left h3{
+    font-size: 3rem;
+    font-weight: 700;
+    
+}
+.header-right ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+}
+.header-right a{
+    text-decoration: none;
+    color: #3C354F;
+    font-size: 1.1rem;
+    margin-left: 30px;
+    
+}
+.header-right a i{
+    font-size: 1.2rem;
+    padding-top: 5px;
+    margin: 5px;
+}
+.nav-bg{
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 8px;
+}
+
+
+/* .banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.banner-text{
+    background-image: url(./images/Group\ 14.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 100px 50px;
+}
+.banner-text h3{
+    font-size: 3rem;
+}
+.banner-text h2{
+    font-size: 5.9rem;
+}
+.banner-text p{
+    margin-bottom: 5px;
+}
+.text{
+        position: relative;
+        top: 0%;
+        left: 80px;
+}
+.banner-img{
+    width: 100%;
+}
+.banner-img img{
+    width: 550px;
+} */
+.banner{
+    display: flex;
+    flex: 100%;
+}
+.banner-text{
+    background-image: url(./images/Group\ 14.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex: 50%;
+}
+.banner-text h3{
+    padding-top: 50px;
+    font-size: 3rem;
+}
+.banner-text h2{
+    font-size: 4rem;
+    font-weight: 900;
+}
+.banner-img{
+    flex: 50%;
+}
+.banner-img img{
+    width: 90%;
+}
+
+
+
+
+
+/* Responsive for mobile device */
+@media screen and (max-width:576px) {
+    nav,
+    ul{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 103px 20px;
+        box-shadow: none;
+    }
+    .header-right{
+        margin-top: 62px;
+    }
+    .header-right ul{
+        gap: 26px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-text{
+        flex: 100%;
+        padding: 90px 50px;
+        margin-left: 30px;
+    }
+    .banner-img{
+        flex: 90%;
+        margin-left: 50px;
+    }
+    .btn-pink{
+        color: white;
+        background-color: #F948B2;
+        padding: 15px 25px;
+        border-radius: 48px;
+        border: 0;
+    }
+    .btn-skyblue{
+        color: #fff;
+        border-radius: 48px;
+        background: #4EC5F7; 
+        padding: 15px 25px;
+        border: 0;
+    }
+    
+
+
+
+    /* .banner{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .banner-text{
+        margin: 20px;
+    }
+    .banner-img img{
+        width: 82%;
+        margin: auto;
+        position: relative;
+        left: 10%;
+    }
+    .text{
+        position: relative;
+        top: 0%;
+        left: 10%;
+    }
+    .banner-text h3{
+        font-size: 1.5rem;
+    }
+    .banner-text h2{
+        font-size: 2.9rem;
+    }
+    .banner-text p{
+        margin-bottom: 10px;
+        font-size: .8rem;
+    } */
+
+
+
+}
