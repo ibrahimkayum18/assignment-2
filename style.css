@@ -128,12 +128,9 @@ ul li{
     width: 90%;
 }
 .container{
-    /* width: 80%; */
-    /* margin: auto; */
+    padding: 100px auto;
     display: flex;
     justify-content: space-between;
-
-    /* flex: 100%; */
     align-items: center;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
     padding: 70px 0px;
@@ -141,13 +138,16 @@ ul li{
 }
 .container-left{
     
-    /* flex: 50%; */
+    width: 90%;
 }
 .container-right{
     text-align: right;
     padding-right: 120px;
     /* flex: 50%;
     padding-right: 130px; */
+}
+.container-right p{
+    width: 500px;
 }
 .con-title{
     color: rgb(201, 93, 201);
@@ -207,7 +207,6 @@ ul li{
   }
 .overlay {
     border-radius: 18px;
-
     position: absolute;
     top: 0;
     bottom: 0;
@@ -222,6 +221,7 @@ ul li{
   .card:hover .overlay {
     opacity: 1;
     border-radius: 18px;
+    font-size: 1rem;
   }
   .icon {
     color: white;
@@ -287,7 +287,7 @@ ul li{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 35px;
+    gap: 10px;
   }
   .g-box{
     display: flex;
@@ -313,6 +313,7 @@ ul li{
   
 footer{
     background-color: #3C354F;
+    margin-top: 100px;
 }
 .footer-left{
     text-align: center;
@@ -329,16 +330,14 @@ footer{
     width: 100%;
 }
 .footer-menu ul{
-    /* display: grid;
-    grid-template-columns: repeat(6, 1fr); */
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 }
 .footer-menu ul li{
     list-style: none;
-    margin: 20px 0px;
+    margin: 10px 0px;
 }
 .footer-menu ul li a{
     text-decoration: none;
