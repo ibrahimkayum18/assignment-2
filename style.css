@@ -116,6 +116,9 @@ ul li{
     margin-bottom: 15px;
     padding-left: 7%;
 }
+.banner-text p i{
+    color: rgb(201, 93, 201);
+}
 .banner-img{
     position: relative;
     right: 5%;
