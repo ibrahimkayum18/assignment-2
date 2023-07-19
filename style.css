@@ -112,6 +112,9 @@ ul li{
     font-weight: 800;
     padding-left: 7%;
 }
+.text p i{
+    color: rgb(201, 93, 201);
+}
 .banner-text p{
     margin-bottom: 15px;
     padding-left: 7%;
@@ -280,11 +283,11 @@ ul li{
   .list{
     width: 80%;
     margin: auto;
-    /* display: grid;
-    grid-template-columns: repeat(5, 1fr); */
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
   }
   .g-box{
     display: flex;
@@ -292,6 +295,7 @@ ul li{
     gap: 5px;
     padding: 10px 10px;
     border-radius: 50px;
+    width: 100%;
     /* border: 2px solid #ddd; */
     
   }
@@ -299,6 +303,7 @@ ul li{
     
     /* background-color: #ddd; */
     margin-bottom: 20px;
+    /* width: 100%; */
     
   }
   .g-list:hover .g-box{
@@ -306,7 +311,70 @@ ul li{
     color: #FF42A5;
   }
   
+footer{
+    background-color: #3C354F;
+}
+.footer-left{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    gap: 20px;
+}
+.f-icon{
+    width: 6rem;
+}
+.footer-menu{
+    width: 100%;
+}
+.footer-menu ul{
+    /* display: grid;
+    grid-template-columns: repeat(6, 1fr); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.footer-menu ul li{
+    list-style: none;
+    margin: 20px 0px;
+}
+.footer-menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+.footer-icon{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 60%;
+    margin:20px auto;
+    gap: 40px;
+    padding: 30px;
 
+}
+.term{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    color: white;
+    margin-top: 20px;
+}
+.down-footer{
+    text-align: center;
+    color: rgb(190, 190, 190);
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+.footer-left{
+    padding: 40px;
+}
 
 
 
@@ -339,6 +407,7 @@ ul li{
         padding: 0px 70px;
         margin-left: 20px;
         width: 60%;
+        margin-bottom: 60px;
     }
     .banner-img{
         flex: 90%;
@@ -407,11 +476,190 @@ ul li{
         width: 100%;
       }
       .list{
-        grid-template-columns: repeat(2, 1fr);
-        
-        text-align: center;
+        flex-wrap: wrap;
+        gap: 0px;
       }
+      .footer-menu ul{
+        /* margin-left: -20px; */
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:5px 50px;
+      }
+      /* .footer-icon{
+        grid-template-columns: repeat(4,1fr);
+        width: 80%;
+      }
+     */
+     .footer-icon,
+     .term,
+     .footer-menu,
+     .footer-left{
+        width: 80%;
+        margin: auto;
+     }
+     .footer-icon,
+     .term{
+        flex-wrap: wrap;
+        gap:20px 30px;
+     }
+     .footer-icon{
+        margin: 30px auto;
+     }
+
+
+
+    .btn-pink{
+        color: white;
+        background-color: #F948B2;
+        padding: 15px 25px;
+        border-radius: 48px;
+        border: 0;
+    }
+    .btn-skyblue{
+        color: #fff;
+        border-radius: 48px;
+        background: #4EC5F7; 
+        padding: 15px 25px;
+        border: 0;
+    }
     
+
+
+
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    nav,
+    ul,
+    .container,
+    .games-container,
+    .anniversary-container{
+        flex-direction: column;
+    }
+    nav{
+        padding: 103px 20px;
+        box-shadow: none;
+    }
+    .header-right{
+        margin: 62px auto;
+        
+    }
+    .header-right ul{
+        gap: 26px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    .banner-text{
+        flex: 100%;
+        padding: 100px 80px;
+        margin-left: 20px;
+        width: 60%;
+        margin-bottom: 100px;
+    }
+    .banner-img{
+        flex: 90%;
+        margin-left: 150px;
+        margin-bottom: 100px;
+    }
+    .banner-text h3{
+        padding-top: 30px;
+        font-size: 2rem;
+        padding-top: 5%;
+        padding-left: 10%;
+    }
+    .banner-text h2{
+        font-size: 3.5rem;
+        font-weight: 800;
+        padding-left:10%;
+    }
+    .banner-text p{
+        font-size: 1rem;
+        margin-bottom: 15px;
+        padding-left: 10%;
+    }
+    .games-container{
+        /* flex-wrap: wrap; */
+        width: 100%;
+        gap: 80px;
+    }
+    .games-container img{
+        margin-bottom: 20px;
+    }
+    .container-left{
+        width: 90%;
+        padding: 0;
+        margin: 0;
+    }
+    .container-right,
+    .anniversary{
+        padding: 0;
+        margin: auto;
+    }
+    .container img{
+        padding-left: 30px;
+        width: 90%;
+        margin: auto;
+
+    }
+    .box{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .text-left{
+        text-align: center;
+        margin: 10px;
+    }
+    .img-right{
+        margin-left: 40px;
+    }
+    .img-2{
+        width: 40%;
+        padding: 5px;
+        background-color: #fff;
+        position: relative;
+        bottom: 80px;
+        margin-left: -60px;
+      }
+      .g-list{
+        width: 30%;
+      }
+      .g-box{
+        width: 100%;
+      }
+      .list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+      .footer-menu ul{
+        /* margin-left: -20px; */
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:5px 50px;
+      }
+      /* .footer-icon{
+        grid-template-columns: repeat(4,1fr);
+        width: 80%;
+      }
+     */
+     .footer-icon,
+     .term,
+     .footer-menu,
+     .footer-left{
+        width: 80%;
+        margin: auto;
+     }
+     .footer-icon,
+     .term{
+        flex-wrap: wrap;
+        gap:20px 30px;
+     }
+     .footer-icon{
+        margin: 30px auto;
+     }
 
 
 
