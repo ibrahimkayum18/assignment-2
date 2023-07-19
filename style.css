@@ -112,9 +112,6 @@ ul li{
     font-weight: 800;
     padding-left: 7%;
 }
-.text p i{
-    color: rgb(201, 93, 201);
-}
 .banner-text p{
     margin-bottom: 15px;
     padding-left: 7%;
@@ -128,9 +125,12 @@ ul li{
     width: 90%;
 }
 .container{
-    padding: 100px auto;
+    /* width: 80%; */
+    /* margin: auto; */
     display: flex;
     justify-content: space-between;
+
+    /* flex: 100%; */
     align-items: center;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
     padding: 70px 0px;
@@ -138,16 +138,13 @@ ul li{
 }
 .container-left{
     
-    width: 90%;
+    /* flex: 50%; */
 }
 .container-right{
     text-align: right;
     padding-right: 120px;
     /* flex: 50%;
     padding-right: 130px; */
-}
-.container-right p{
-    width: 500px;
 }
 .con-title{
     color: rgb(201, 93, 201);
@@ -207,6 +204,7 @@ ul li{
   }
 .overlay {
     border-radius: 18px;
+
     position: absolute;
     top: 0;
     bottom: 0;
@@ -221,7 +219,6 @@ ul li{
   .card:hover .overlay {
     opacity: 1;
     border-radius: 18px;
-    font-size: 1rem;
   }
   .icon {
     color: white;
@@ -287,7 +284,7 @@ ul li{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 35px;
   }
   .g-box{
     display: flex;
@@ -313,7 +310,6 @@ ul li{
   
 footer{
     background-color: #3C354F;
-    margin-top: 100px;
 }
 .footer-left{
     text-align: center;
@@ -330,14 +326,16 @@ footer{
     width: 100%;
 }
 .footer-menu ul{
+    /* display: grid;
+    grid-template-columns: repeat(6, 1fr); */
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
 }
 .footer-menu ul li{
     list-style: none;
-    margin: 10px 0px;
+    margin: 20px 0px;
 }
 .footer-menu ul li a{
     text-decoration: none;
@@ -406,7 +404,6 @@ footer{
         padding: 0px 70px;
         margin-left: 20px;
         width: 60%;
-        margin-bottom: 60px;
     }
     .banner-img{
         flex: 90%;
@@ -436,6 +433,9 @@ footer{
         width: 90%;
         padding: 0;
         margin: 0;
+    }
+    .anniversary .games-title{
+        font-size: 1.5rem;
     }
     .container-right,
     .anniversary{
@@ -469,14 +469,15 @@ footer{
         margin-left: -60px;
       }
       .g-list{
-        width: 50%;
+        width: 40%;
       }
       .g-box{
         width: 100%;
       }
       .list{
+        flex-direction: row;
         flex-wrap: wrap;
-        gap: 0px;
+        gap: 10px;
       }
       .footer-menu ul{
         /* margin-left: -20px; */
@@ -499,7 +500,7 @@ footer{
      .footer-icon,
      .term{
         flex-wrap: wrap;
-        gap:20px 30px;
+        gap:20px 50px;
      }
      .footer-icon{
         margin: 30px auto;
@@ -528,6 +529,7 @@ footer{
 }
 
 @media screen and (min-width:576px) and (max-width:992px) {
+    
     nav,
     ul,
     .container,
@@ -579,9 +581,16 @@ footer{
         padding-left: 10%;
     }
     .games-container{
-        /* flex-wrap: wrap; */
+        flex-wrap: wrap;
+        width: 90%;
+        gap: 20px;
+    }
+    .games-title{
+        font-size: 2rem;
         width: 100%;
-        gap: 80px;
+    }
+    .games-description{
+        max-width: 90%;
     }
     .games-container img{
         margin-bottom: 20px;
@@ -595,6 +604,10 @@ footer{
     .anniversary{
         padding: 0;
         margin: auto;
+    }
+    .anniversary .games-title{
+        font-size: 2rem;
+        width: 100%;
     }
     .container img{
         padding-left: 30px;
@@ -622,28 +635,15 @@ footer{
         bottom: 80px;
         margin-left: -60px;
       }
-      .g-list{
-        width: 30%;
-      }
-      .g-box{
-        width: 100%;
-      }
       .list{
-        flex-direction: row;
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 10px;
       }
       .footer-menu ul{
-        /* margin-left: -20px; */
         flex-direction: row;
         flex-wrap: wrap;
         gap:5px 50px;
       }
-      /* .footer-icon{
-        grid-template-columns: repeat(4,1fr);
-        width: 80%;
-      }
-     */
      .footer-icon,
      .term,
      .footer-menu,
