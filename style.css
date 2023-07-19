@@ -395,9 +395,11 @@ footer{
     }
     .header-right ul{
         gap: 26px;
+        margin-left: -20px;
     }
     .banner{
         flex-direction: column-reverse;
+        margin-bottom: 50px;
     }
     .banner-text{
         flex: 100%;
@@ -448,6 +450,12 @@ footer{
         margin: auto;
 
     }
+    .boxes{
+        margin-bottom: 40px;
+    }
+    .card{
+        margin-bottom: 20px;
+    }
     .box{
         width: 80%;
         margin: auto;
@@ -469,15 +477,16 @@ footer{
         margin-left: -60px;
       }
       .g-list{
-        width: 40%;
+        width: 35%;
       }
       .g-box{
         width: 100%;
       }
       .list{
+        width: 100%;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 10px;
+        gap:  5px;
       }
       .footer-menu ul{
         /* margin-left: -20px; */
@@ -547,6 +556,7 @@ footer{
     }
     .header-right ul{
         gap: 26px;
+        margin-left: -10px;
     }
     .banner{
         flex-direction: column-reverse;
